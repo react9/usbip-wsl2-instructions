@@ -163,8 +163,8 @@ Mark it as executable:
 ```
 
 Update WSL in windows to use the new kernel:
-- Copy the file /usr/src/<kernel_src>/arch/x86/boot/bzImage to C:\users\<username>\kernel\bzImage
-- Create the file C:\users\<username>\.wslconfig
+- Copy the file /usr/src/4.19.x-microsoft-standard/arch/x86/boot/bzImage to C:\users\username\kernel\bzImage
+- Create the file C:\users\username\.wslconfig
 - Copy the following into the .wslconfig file
 ```
 [wsl2] 
