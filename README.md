@@ -162,6 +162,15 @@ Mark it as executable:
 ~$ sudo chmod +x startusb.sh
 ```
 
+Update WSL in windows to use the new kernel:
+- Copy the file /usr/src/<kernel src>/arch/x86/boot/bzImage to C:\users\<username>\kernel\bzImage
+- Create the file C:\users\<username>\.wslconfig
+- Copy the following into the .wslconfig file
+```
+[wsl2] 
+kernel=C:\\Users\\<username>\\kernel\\bzImage
+```  
+
 Restart WSL. In a CMD window in Windows type:
 ```
 C:\Users\rpasek>wsl --shutdown
